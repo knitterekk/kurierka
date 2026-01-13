@@ -2,26 +2,27 @@ package org.example;
 
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
 public class CourierStorage {
-    private static List<Courier> couriers;
+    private List<Courier> couriers;
 
-    public CourierStorage(List<Courier> couriers) {
-        this.couriers = couriers;
+    public CourierStorage() {
+        this.couriers = new ArrayList<>();
 
         couriers.add(new Courier(1, "FastExpress", 50.0));
         couriers.add(new Courier(2, "QuickShip", 30.0));
     }
 
-    public static List<Courier> findCourierById(int id) {
-        List<Courier> result = new java.util.ArrayList<>();
+    public Courier findCourierById(int id) {
+
         for (Courier courier : couriers) {
             if (courier.getId() == id) {
-                result.add(courier);
+                return courier;
             }
         }
-        return result;
+        return null;
     }
 }

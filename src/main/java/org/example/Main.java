@@ -8,9 +8,6 @@ public class Main {
 
 
     public Main(LogisticsService logisticsService) {
-        logisticsService.assignParcelToCourier(1, 1);
-        logisticsService.assignParcelToCourier( 2, 2);
-        logisticsService.assignParcelToCourier( 3, 103);
 
 
     }
