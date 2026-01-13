@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-@SpringBootTest(classes = Main.class)
+@SpringBootTest(classes = LogisticsApplication.class)
 class LogisticsServiceIntegrationTest {
 
     @Autowired

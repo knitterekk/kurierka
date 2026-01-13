@@ -4,15 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Main {
+public class LogisticsApplication {
 
 
-    public Main(LogisticsService logisticsService) {
+    public LogisticsApplication(LogisticsService logisticsService) {
 
 
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
+        SpringApplication.run(LogisticsApplication.class, args);
     }
 }
